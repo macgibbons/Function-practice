@@ -92,9 +92,7 @@ const arrayBuilder = (array) => {
 
         } else {
             newArray.push(element)
-            
         }
-
     }
     console.log(newArray);
     return newArray;
@@ -107,5 +105,28 @@ const stringBuilder = (Array) => {
     console.log(finalString);
 }
 
-arrayBuilder(words);
-stringBuilder(newArray);
+
+
+const finalArray = arrayBuilder(words);
+stringBuilder(finalArray);
+
+// Practice: You Can Tune a Piano, But You Can't...
+// Sven the Norwegian fisherman goes out at 5:32 AM every day to fish for tuna in the North Sea. Each time he casts his line, he has a 33% chance of catching a tuna.
+
+// On a side note, did you know that you can ask JavaScript for a random number? You use the Math.random() method which, by default, returns a number between 0 and 1. If you mutiply the result by 2, you will get a number between 0 and 2. This would allow you to simulate a coin flip. You could check if the value was between 0 and 1 (heads), or between 1 and 2 (tails).
+
+// Math.random() * 2  // Number between 0 and 2
+// Write a function that simulates Sven's chances of catching a tuna. The function needs no input, and it simply returns true or false. If a random number falls in a certain range, return true. If it falls in any other range, return false.
+
+// Invoke the function and then log one of the following messages to the console.
+
+math.random() * 3
+// Sven hooked a tuna!  :)
+// or
+
+// Sven came up empty-handed.  :(
+// Exploration Tasks
+// Try multiplying the random() method by different values and see how it affects how often Sven catches a fish.
+// Instead of hard-coding the number by which you multiple random(), see if you can pass that number in as an argument to the function.
+// Is your function a pure function? Why or why not? If you're unsure, talk to your teammates or your instructors.
+// What happens if you multiply random() by 0?
