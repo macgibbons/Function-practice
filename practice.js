@@ -120,13 +120,25 @@ stringBuilder(finalArray);
 
 // Invoke the function and then log one of the following messages to the console.
 
-math.random() * 3
+const svenFunction = () => {
+const coinFlip = Math.random() * 3;
+if (coinFlip <= 2 && coinFlip > 1 ) {
+    return  `Sven hooked a tuna! :)`
+    } else {
+        return `Sven came up empty handed :(`
+    }   
+}
+
+console.log(svenFunction(0))
+
 // Sven hooked a tuna!  :)
 // or
 
 // Sven came up empty-handed.  :(
+
 // Exploration Tasks
 // Try multiplying the random() method by different values and see how it affects how often Sven catches a fish.
 // Instead of hard-coding the number by which you multiple random(), see if you can pass that number in as an argument to the function.
 // Is your function a pure function? Why or why not? If you're unsure, talk to your teammates or your instructors.
 // What happens if you multiply random() by 0?
+
