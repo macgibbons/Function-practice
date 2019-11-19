@@ -120,6 +120,7 @@ stringBuilder(finalArray);
 
 // Invoke the function and then log one of the following messages to the console.
 
+const svenFunction = () => 
 math.random() * 3
 // Sven hooked a tuna!  :)
 // or
